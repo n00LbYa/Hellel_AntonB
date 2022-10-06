@@ -21,9 +21,9 @@ print(case == lori)
 print(case is lori)
 print("-" * 50)
 
-bull = [2, 4, 12]
-circle = copy.copy(bull)
-kole = copy.copy(circle)
+bull = {2, 4, 12}
+circle = {2, 4, 12}
+kole = {2, 4, 12}
 print(bull==circle)
 print(bull==kole)
 print(kole==circle)
@@ -33,7 +33,7 @@ print(id(kole))
 print("-" * 50)
 
 case = (23, 42, "we")
-lori = case
+lori = (23, 42, "we")
 print(case == lori)
 print(case is lori)
 print("-" * 50)
