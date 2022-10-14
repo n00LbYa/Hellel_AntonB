@@ -17,10 +17,12 @@ x = 1
 sum = 0
 while x <= int(n):
 
+    if x % 3 == 0:
+        x += 1
+        continue
+
     sum = sum + (x * x * x)
     x = x + 1
-    if x % 3 == 0:
-        continue
 
 print(sum)
 
