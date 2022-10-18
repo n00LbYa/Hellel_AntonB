@@ -10,7 +10,6 @@
 # Если ответ будет буква "Д" или буква "Y" в любом регистре, то произвести выход из вечного цикла.
 # В противном случае продолжить выполнение программы заново.
 
-
 while True:
    your_name = input("Enter your name: ")
    your_age = input("Enter your age: ")
@@ -49,6 +48,7 @@ while True:
         answer = input("Хотите выйти? (Д/Y)")
         if answer.upper() in ("Y", "Д"):
             break
+
 
 
 
