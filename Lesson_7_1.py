@@ -15,5 +15,3 @@ while answer < len(find_secret):
         break
     answer += 1
 
-
-
