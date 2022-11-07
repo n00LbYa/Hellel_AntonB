@@ -3,8 +3,46 @@
 # Записать данный словарь на диск в json-файл.
 
 import json
-our_dictionary = {123467: ("Luka", 39), 456457: ("Karim", 38), 624652: ("Gareth", 40), 452356: ("Tibo", 35),
-                   976896: ("Lucas", 35), 123650: ("Toni", 37)}
+
+our_dictionary = [
+    {
+        123467: (
+            {
+                "Last_name": "Luka",
+                "Age" :39
+            }
+        ),
+        456457: (
+            {
+                "Last_name": "Karim",
+                "Age": 38
+            }
+        ),
+        624652: (
+            {
+                "Last_name": "Gareth",
+                "Age": 40
+            }
+        ),
+        452356: (
+            {
+                "Last_name": "Tibo",
+                "Age": 35}
+        ),
+        976896: (
+            {
+                "Last_name": "Lucas",
+                "Age": 35
+            }
+        ),
+        123650: (
+            {
+                "Last_name": "Toni",
+                "Age": 37
+            }
+        )
+    }
+]
 
 with open("our_task_1.json", 'w') as f:
     json.dump(our_dictionary, f)
